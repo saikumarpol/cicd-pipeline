@@ -4,6 +4,7 @@ import ItemList from './ItemList';
 import CreateItem from './CreateItem';
 
 function App() {
+  console.log('Testing the pipeline!');
   return (
     <Router>
       <div>
