@@ -1,20 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ItemList from './ItemList';
-import CreateItem from './CreateItem';
+import React from "react";
 
 function App() {
-  console.log('Testing the pipeline!');
   return (
-    <Router>
-      <div>
-        <h1>React CRUD SPA</h1>
-        <Routes>
-          <Route path="/" element={<ItemList />} />
-          <Route path="/create" element={<CreateItem />} />
-        </Routes>
-      </div>
-    </Router>
+    <div>
+      <h1>Hello, World!</h1>
+      <p>This is a test to verify code check pipeline.</p>
+    </div>
   );
 }
 
