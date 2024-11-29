@@ -1,12 +1,21 @@
-import React from "react";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <h1>Hello, Welcome to raj reddy center for technology and society </h1>
-      <p>This is a test to verify code check pipeline.</p>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
